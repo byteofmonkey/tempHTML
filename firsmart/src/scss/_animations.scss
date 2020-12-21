@@ -1,0 +1,20 @@
+//_____________________________LAZY_LOAD_APPEARANCE
+.fadeIn {
+    animation: fadein 0.2s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.loading {
+    opacity: 0;
+}
+
+//_______________________________________________JS

@@ -1,0 +1,32 @@
+@import "./_variables.scss";
+// variables / mixins / reset
+
+@import "./_animations.scss";
+// animations / JS determined styles
+
+@import "./_elements.scss";
+// buttons / repeatable elements
+
+@import "./_intro.scss";
+
+@import "./_media.scss";
+
+
+
+//____________________BACKGROUND IMAGE SUPPORT WEBP
+:root.webp {}
+
+//_________________BACKGROUND IMAGE NO SUPPORT WEBP
+:root.no-webp {}
+
+:root {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Neo Sans Pro';
+    font-size: 2rem;
+}
+
+.logo {}

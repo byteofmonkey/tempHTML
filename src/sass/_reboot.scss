@@ -1,0 +1,279 @@
+/////////////____________________________COLORS
+$c-white: #ffffff;
+$c-black: #0d0d0d;
+$c-red: #c70101;
+$c-grey: #6b6b6b;
+$c-form-placeholder: #4b4b4b;
+$c-catalogue-header: #6b6b6b;
+$c-catalogue-card-border: #e8e8e8;
+
+$c-button-red: linear-gradient(179.61deg, rgba(239, 35, 60, 0.51) 0.36%, rgba(255, 255, 255, 0) 99.69%),
+#EF233C;
+
+
+$bg-grey: radial-gradient(circle, rgba(178, 183, 190, 0.25) 40%, rgba(62, 65, 70, 0.95) 85%);
+
+$bg-beige: radial-gradient(circle, rgba(241, 215, 166, 0.25) 0%, rgba(241, 215, 166, 1) 85%);
+
+$bg-blue: linear-gradient(90deg, rgba(22, 26, 29, 0.2) 0%, rgba(22, 26, 29, 0.7) 15%, rgba(22, 26, 29, 0.9) 20%, rgba(96, 110, 139, 0.9) 20%, rgba(96, 110, 139, 0.5) 25%, rgba(96, 110, 139, 1) 100%);
+
+
+
+:root {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Museo Sans Cyrl';
+}
+
+/////////////________________________BREAKPOINTS
+//desktop: 992px to 1200px
+@mixin desktop() {
+    @media (max-width: 1199.98px) {
+        @content;
+    }
+}
+
+// tablet 768px to 992px
+@mixin tablet() {
+    @media (max-width: 991.98px) {
+        @content;
+    }
+}
+
+// medium 576px to 768px
+@mixin phone() {
+    @media (max-width: 767.98px) {
+        @content;
+    }
+}
+
+// Small less than 576px
+@mixin small() {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+
+/////////////______________________________FONTS
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: local('MuseoSansCyrl-300'),
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: local('MuseoSansCyrl-500'),
+        url('../fonts/MuseoSansCyrl-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: local('MuseoSansCyrl-700'),
+        url('../fonts/MuseoSansCyrl-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'icon';
+    font-display: auto;
+    src: url('../fonts/icon.woff') format('woff');
+}
+
+///////////______________________________RESET
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    // Prevent adjustments of font size after orientation changes in iOS.
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+blockquote {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+picture {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+// Forms ==========================================================================
+//  * 1. Change the font styles in all browsers.
+//  * 2. Remove the margin in Firefox and Safari.
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    // /* 1 */
+    font-size: 100%;
+    // /* 1 */
+    line-height: 1.15;
+    // /* 1 */
+    margin: 0;
+    // /* 2 */
+}
+
+button,
+input {
+    overflow: visible;
+    // Show the overflow in IE, Edge.
+}
+
+button,
+select {
+    text-transform: none;
+    //  Remove the inheritance of text transform in Edge, Firefox, and IE.
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+    // Correct the inability to style clickable types in iOS and Safari.
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+    //  Remove the inner border and padding in Firefox.
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+    //  Restore the focus styles unset by the previous rule.
+}
+
+progress {
+    vertical-align: baseline;
+    //  Add the correct vertical alignment in Chrome, Firefox, and Opera.
+}
+
+textarea {
+    overflow: auto;
+    //  Remove the default vertical scrollbar in IE 10+.
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    //  Add the correct box sizing in IE 10.
+    padding: 0;
+    //  Remove the padding in IE 10.
+}
+
+//  * Correct the cursor style of increment and decrement buttons in Chrome.
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    //  Correct the odd appearance in Chrome and Safari.
+    outline-offset: -2px;
+    //  Correct the outline style in Safari.
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    //  Remove the inner padding in Chrome and Safari on macOS.
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    //  Correct the inability to style clickable types in iOS and Safari.
+    font: inherit;
+    //  Change font properties to `inherit` in Safari.
+}
+
+details {
+    display: block;
+    //  Add the correct display in Edge, IE 10+, and Firefox.
+}
+
+summary {
+    display: list-item;
+    // Add the correct display in all browsers.
+}
+
+template {
+    display: none;
+    //  Add the correct display in IE 10+.
+}
+
+[hidden] {
+    display: none;
+    //  Add the correct display in IE 10.
+}

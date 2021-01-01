@@ -1,0 +1,24 @@
+@import "./_reboot.scss";
+// variables / mixins / reset
+
+@import "./_animations.scss";
+// animations / JS determined styles
+
+@import "./_elements.scss";
+// buttons / repeatable elements
+
+@import "./_intro.scss";
+@import "./_advantages";
+// @import "./_form";
+// @import "./_slider";
+// @import "./_catalogue";
+// @import "./_feedback";
+// @import "./_footer";
+// @import "./_media.scss";
+
+
+// //____________________BACKGROUND IMAGE SUPPORT WEBP
+// :root.webp {}
+
+// //_________________BACKGROUND IMAGE NO SUPPORT WEBP
+// :root.no-webp {}

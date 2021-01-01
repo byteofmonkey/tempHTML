@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?8x7q80');
+  src:  url('fonts/icomoon.eot?8x7q80#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8x7q80') format('truetype'),
+    url('fonts/icomoon.woff?8x7q80') format('woff'),
+    url('fonts/icomoon.svg?8x7q80#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-circle-left-solid:before {
+  content: "\e907";
+}
+.icon-chevron-circle-right-solid:before {
+  content: "\e90c";
+}
+.icon-chevron-down-solid:before {
+  content: "\e90d";
+}
+.icon-chevron-left-solid:before {
+  content: "\e90e";
+}
+.icon-chevron-right-solid:before {
+  content: "\e90f";
+}
+.icon-chevron-up-solid:before {
+  content: "\e910";
+}
+.icon-iconmonstr-award-18:before {
+  content: "\e911";
+}
+.icon-iconmonstr-certificate-6:before {
+  content: "\e912";
+}
+.icon-iconmonstr-certificate-10:before {
+  content: "\e913";
+}
+.icon-iconmonstr-delivery-8:before {
+  content: "\e914";
+}
+.icon-iconmonstr-help-6:before {
+  content: "\e915";
+}
+.icon-iconmonstr-idea-10:before {
+  content: "\e916";
+}
+.icon-iconmonstr-map-10:before {
+  content: "\e917";
+}
+.icon-iconmonstr-marketing-13:before {
+  content: "\e918";
+}
+.icon-iconmonstr-marketing-23:before {
+  content: "\e919";
+}
+.icon-iconmonstr-medal-1:before {
+  content: "\e91a";
+}
+.icon-iconmonstr-photo-camera-12:before {
+  content: "\e91b";
+}
+.icon-iconmonstr-product-8:before {
+  content: "\e91c";
+}
+.icon-iconmonstr-school-15:before {
+  content: "\e91d";
+}
+.icon-iconmonstr-school-30:before {
+  content: "\e91e";
+}
+.icon-iconmonstr-script-10:before {
+  content: "\e91f";
+}
+.icon-iconmonstr-speech-bubble-4:before {
+  content: "\e920";
+}
+.icon-iconmonstr-speech-bubble-6:before {
+  content: "\e921";
+}
+.icon-iconmonstr-speech-bubble-27:before {
+  content: "\e922";
+}
+.icon-iconmonstr-speech-bubble-comments-thin:before {
+  content: "\e923";
+}
+.icon-iconmonstr-trophy-10:before {
+  content: "\e924";
+}
+.icon-accomplishments_experience:before {
+  content: "\e900";
+}
+.icon-accomplishments_heart:before {
+  content: "\e901";
+}
+.icon-accomplishments_run:before {
+  content: "\e902";
+}
+.icon-intro_delivery:before {
+  content: "\e903";
+}
+.icon-intro_logo:before {
+  content: "\e904";
+}
+.icon-intro_questions:before {
+  content: "\e905";
+}
+.icon-intro_time:before {
+  content: "\e906";
+}
+.icon-facebook:before {
+  content: "\e908";
+}
+.icon-instagram:before {
+  content: "\e909";
+}
+.icon-pinterest:before {
+  content: "\e90a";
+}
+.icon-twitter:before {
+  content: "\e90b";
+}

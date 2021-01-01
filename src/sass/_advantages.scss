@@ -1,0 +1,44 @@
+.advantages {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    &__cards {
+        margin-top: 5rem;
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        grid-column-gap: 8rem;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $c-black;
+
+        span {
+            font-family: icon;
+            color: $c-red;
+            font-size: 6rem;
+        }
+
+        h3 {
+            margin-top: 1.8rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 1.5rem;
+            font-size: 1.4rem;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        a {
+            white-space: nowrap;
+            text-decoration: underline;
+            color: $c-red;
+        }
+    }
+}

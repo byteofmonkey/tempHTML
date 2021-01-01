@@ -1,0 +1,64 @@
+//_____________________________LAZY_LOAD_APPEARANCE
+.fadeIn {
+    animation: fadein 0.2s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.loading {
+    opacity: 0;
+}
+
+//_______________________________________________JS
+
+// Catalogue tabs:
+.catalogue__header div.active {
+    color: $c-white;
+
+    &::before {
+        background: $c-red;
+        border: none;
+    }
+}
+
+// Catalogue tabs button more
+.catalogue .card__slider {
+    transition: transform 0.4s linear;
+}
+
+
+
+
+
+.catalogue .card__slider {
+    // transition: transform 0.5s linear opacity 0.5s linear;
+}
+
+// .tns-item {
+//     transform: scale(0.5);
+//     // opacity: 0;
+//     transition: transform 0.3s linear;
+// }
+
+// .tns-slide-active {
+//     transform: scale(1);
+//     transition: tansform 1s linear;
+//     // opacity: 1;
+// }
+
+
+
+
+
+// .swiper-slide-active img {
+//     -webkit-box-reflect: below 10px linear-gradient(#0000 80%, rgba(255, 255, 255, 0.15));
+
+// }
